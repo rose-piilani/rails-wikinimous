@@ -1,4 +1,8 @@
-<h2><%= @article.title %></h2>
-<p><%= @article.content %></p>
-
-<%= link_to "Return to list of articles", articles_path %>
+<div class="container">
+  <div class="row">
+    <h2><%= @article.title %></h2>
+    <p><%= @article.content %></p>
+    <hr />
+    <%= link_to "Return to list of articles", articles_path %>
+  </div>
+</div>

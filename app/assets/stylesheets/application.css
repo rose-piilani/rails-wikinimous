@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+.header-wpr {
+  padding: 15px 0 35px;
+  margin-bottom: 30px;
+  color: #fff;
+  background-color: #337ab7;
+}
+.header-wpr a {
+  color: #fff;
+}
+.footer-wpr {
+  padding: 30px 0;
+  margin-top: 30px;
+  color: #fff;
+  background-color: #337ab7;
+ }
+.article:first-of-type hr {
+  display: none;
+}

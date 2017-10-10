@@ -1,9 +1,17 @@
 <!-- app/views/tasks/_form.html.erb -->
-<%= form_for(@article) do |f| %>
-<%= f.label :title %>
-<%= f.text_field :title %>
-<%= f.label :content %>
-<%= f.text_area :content %>
-<%= f.submit %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <%= form_for(@article) do |f| %>
+    <div class="form-group">
+      <%= f.label :title, class: "control-label" %>
+      <%= f.text_field :title, class: "form-control", placeholder: "Article Title" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :content, class: "control-label" %>
+      <%= f.text_area :content, class: "form-control", placeholder: "Article content" %>
+    </div>
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
 <!-- .element: class="view" -->
